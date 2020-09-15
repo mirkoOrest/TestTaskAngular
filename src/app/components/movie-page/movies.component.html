@@ -1,0 +1,12 @@
+<div>
+  <button (click)="sortByYear()" [class.button]="true" >Sort by year</button>
+  <button (click)="sortByGenreFirst()" [class.button]="true" >Sort by genre first</button>
+  <button (click)="sortByGenreSecond()" [class.button]="true" >Sort by genre second</button>
+  <div class="container" *ngFor="let movie of movies">
+    <h2>NAME:{{movie.name}}</h2>
+    <p>GENRE FIRST:{{movie.genre1}}</p>
+    <p>GENRE SECOND:{{movie.genre2}}</p>
+    <small>YEAR:{{movie.year}}</small>
+  </div>
+</div>
+
